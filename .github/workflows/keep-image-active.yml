@@ -1,0 +1,19 @@
+###############################################################################################
+# Simple workflow to keep docker images active (Quarterly)
+###############################################################################################
+
+name: Keep Docker Images Active Workflow
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 0 1 */4 *'
+
+jobs:
+  pull-images:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Pull Docker Images
+      run: |
+          docker pull bkjam/helm-kubectl-curl-jq-docker:latest
+          docker pull bkjam/helm-kubectl-curl-jq-docker:v1.27.1-v3.11.3
