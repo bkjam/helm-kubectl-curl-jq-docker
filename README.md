@@ -17,6 +17,10 @@ docker run helm-kubectl-curl-jq-docker:v1.27.1-v3.11.3
 docker login
 docker tag helm-kubectl-curl-jq-docker:v1.27.1-v3.11.3 bkjam/helm-kubectl-curl-jq-docker:v1.27.1-v3.11.3
 docker push bkjam/helm-kubectl-curl-jq-docker:v1.27.1-v3.11.3
+
+# Git Tag
+git tag -a v1.27.1-v3.11.3 -m "kubectl v1.27.1 and helm v3.11.3"
+git push origin v1.27.1-v3.11.3
 ```
 
 ## Docker Tags
