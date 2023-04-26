@@ -1,5 +1,7 @@
 # helm-kubectl-curl-jq-docker
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/bkjam/helm-kubectl-curl-jq-docker)]()
+
 Custom alpine docker image with helm, kubectl, curl, jq installed with credits to [lwolf/helm-kubectl-docker](https://github.com/lwolf/helm-kubectl-docker).
 
 Docker Registry: https://hub.docker.com/r/bkjam/helm-kubectl-curl-jq-docker
